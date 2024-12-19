@@ -103,12 +103,10 @@ header{
     background: white;
     width: 100%;
     height: 97px;
-    z-index: 999;
+    z-index: 123;
 }
 
-svg{
-    display: none;
-}
+
 
 nav ul{
     list-style: none;
@@ -147,13 +145,13 @@ nav h2:hover{
     transition: .3s;
 }
 
-.sidebar{
+#sidebar{
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     width: 225px;
-    z-index: 0;
+    z-index: 999;
     background-color: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(10px);
     box-shadow: 10px 0 10px rgb(0, 0, 0, 0.1);
@@ -163,20 +161,37 @@ nav h2:hover{
     justify-content: flex-start;
 }
 
-.sidebar li{
+#sidebar li{
     width: 100%;
 }
 
-.sidebar a{
+#sidebar a{
     width: 100%;
 }
 
-.sidebar h2 h3{
-    margin: 10px 0 0 0;
-    padding: 10px;
+#sidebar h2{
+    margin: 97px 0 0 0;
     text-align: left;
+}
+
+#sidebar h3{
+    margin-right: 0;
+    text-align: left;
+    padding: 10px 20px;
 
 }
+
+#sidebar svg{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+
+#menu svg{
+    display: none;
+}
+
+
 /*---------- Index --------------------*/
 
 .myVideo{
@@ -584,13 +599,18 @@ footer .coluna-33#coluna-33-direita a:hover{
         display: none;
     }
 
-    nav ul {
+    #menu svg{
+        display: flex;
         position: absolute;
-        text-align: left;
-        left: 5%;
-        top: 50%;
-        transform: translate(-5%, -50%);
+        top: 30px;
+        left: 20px;
     }
+
+    #menu{
+        height: 97px;
+        align-content: center;
+    }
+
 
     aside {
         position: relative;
@@ -635,9 +655,6 @@ footer .coluna-33#coluna-33-direita a:hover{
 
     }
 
-    svg{
-        display: inline-block;
-    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -673,5 +690,10 @@ footer .coluna-33#coluna-33-direita a:hover{
     }
     aside{
         height: 100px;
+    }
+
+
+    #sidebar{
+        width: 100%;
     }
 }
