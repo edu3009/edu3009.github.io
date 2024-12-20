@@ -1,0 +1,17 @@
+[
+  {
+    "imagem": "imgs/sweat1.png",
+    "nome": "Baggy Hoodie",
+    "preco": "39,99€"
+  },
+  {
+    "imagem": "imgs/sweat2.png",
+    "nome": "Sweatshirt with Zipper",
+    "preco": "25,99€"
+  },
+  {
+    "imagem": "imgs/sweat3.png",
+    "nome": "Boxy Sweatshirt",
+    "preco": "19,99€"
+  }
+]
